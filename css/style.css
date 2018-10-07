@@ -103,3 +103,15 @@ img{ max-width:100%;}
     border-bottom-color: #eeeeee;
     background-color: #fafafa;
 }
+
+.animacion-corazon {
+  width: 255px;
+  height: 212px;
+  margin: 2% auto;
+  background: url('../images/teleton.png') left center;
+  animation: play 4s steps(5) infinite;
+}
+
+@keyframes play {
+	100% { background-position: -1275px; }
+}
