@@ -25,7 +25,13 @@ body {
 .transicion {
     fill: red;
 }
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
+.juan
+{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
 .vcenter {
     display: inline-block;
     vertical-align: middle;
