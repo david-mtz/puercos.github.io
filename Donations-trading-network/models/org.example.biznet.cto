@@ -1,0 +1,29 @@
+namespace org.example.biznet
+
+asset TradingDona identified by cardId {
+  o String cardId
+  o String cardName
+  o String cardDescription
+  o DonType cardType default="Donacion" 
+  o Boolean forTrade
+  --> Trader owner
+}
+
+enum DonType {
+  o donacion
+  
+}
+participant Trader identified by traderId {
+  o String traderId
+  o String traderName
+}
+
+transaction TradeCard {
+  --> TradingDon dona
+  --> Trader newOwner
+}
+event TradeNotification {
+  --> TradingDon dona
+
+}
+
